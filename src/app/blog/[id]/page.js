@@ -1,12 +1,14 @@
 "use client";
 
+import { use } from "react";
 import styles from "./page.module.css";
 import { notFound } from "next/navigation";
 import posts from "@/data/post";
 import { useRouter } from "next/navigation";
 
 export default function BlogDetailPage({ params }) {
-  const postId = parseInt(params.id);
+  const { id } = use(params); // <- hier params "unwrapped"
+  const postId = parseInt(id);
   const post = posts.find((p) => p.id === postId);
   const router = useRouter();
 
