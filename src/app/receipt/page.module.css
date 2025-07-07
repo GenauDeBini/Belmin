@@ -1,17 +1,15 @@
-/* Container */
 .container {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f7f7f7, #eaeaea);
   color: #333;
-  padding: 3rem 1.5rem;  /* Angepasste Polsterung, damit es nicht zu viel Platz gibt */
+  padding: 3rem 1.5rem;
   line-height: 1.7;
-  max-width: 100%;  /* Entfernt die Begrenzung der Breite */
+  max-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  box-sizing: border-box;  /* Verhindert, dass padding die Gesamtbreite beeinflusst */
+  box-sizing: border-box;
 }
 
-/* Titel */
 .title {
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -21,7 +19,6 @@
   margin-top: 0;
 }
 
-/* Untertitel */
 .subtitle {
   font-size: 1.6rem;
   margin-top: 2.5rem;
@@ -30,7 +27,6 @@
   font-weight: 400;
 }
 
-/* Tabelle */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -62,7 +58,6 @@
   background-color: #f8f8f8;
 }
 
-/* Responsive Tabellen-Ansicht */
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem;
@@ -76,7 +71,6 @@
     font-size: 1.3rem;
   }
 
-  /* Table for Mobile */
   .table,
   .table thead,
   .table tbody,
@@ -106,7 +100,6 @@
   }
 }
 
-/* Zurück-Button */
 .backButton {
   display: inline-block;
   padding: 14px 28px;

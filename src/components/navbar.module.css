@@ -1,24 +1,20 @@
-/* Navbar */
 .navbar {
-  background: linear-gradient(135deg, #ff4d4d, #ff0000); /* Farbverlauf für die Navbar */
+  background: linear-gradient(135deg, #3498db, #d1e1f4);
   color: white;
-  padding: 20px 3rem;
+  padding: 12px 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
-  position: fixed;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  border-radius: 0 0 12px 12px; /* Abgerundete Ecken für die untere Seite der Navbar */
   transition: background 0.3s ease;
 }
 
-/* Logo */
 .logo {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
   letter-spacing: 1px;
@@ -26,69 +22,69 @@
   padding: 0.5rem 0;
 }
 
-/* Menü */
 .menu {
   list-style-type: none;
   display: flex;
-  gap: 40px;
+  gap: 25px;
 }
 
 .menu li {
   display: inline;
 }
 
-/* Menü-Links */
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
-  padding: 10px 20px;
+  font-size: 1rem;
+  padding: 8px 16px;
   border: 2px solid transparent;
   border-radius: 6px;
-  background-color: #ff3b3b;
+  background-color: #7f8c8d;
   transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #c50000; /* Dunkleres Rot beim Hover */
-  transform: scale(1.1);
-  padding: 12px 24px;
+  background-color: #2980b9;
+  transform: scale(1.05);
+  padding: 10px 20px;
 }
 
 .menu a:focus {
   outline: none;
-  border: 2px solid #c50000;
-  background-color: #c50000;
+  border: 2px solid #34495e;
+  background-color: #34495e;
 }
 
 .menu a.active {
-  background-color: #ff6347;
+  background-color: #2c3e50;
   color: #fff;
-  border-color: #ff6347;
+  border-color: #2c3e50;
 }
 
-/* Navbar Scroll-Effekt */
 .navbar.scroll {
-  background: linear-gradient(135deg, #ff6347, #d40000); /* Farbverlauf beim Scrollen */
+  background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 2rem;
+    padding: 10px 2rem;
   }
 
   .menu {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     margin-top: 1rem;
   }
 
   .menu a {
-    font-size: 1.2rem;
-    padding: 12px 30px;
+    font-size: 1.1rem;
+    padding: 10px 30px;
   }
+}
+
+.main-content {
+  padding-top: 80px;
 }

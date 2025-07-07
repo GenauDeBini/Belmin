@@ -1,17 +1,14 @@
-/* Detail Container */
 .detailContainer {
-  width: 100%; /* Macht den Container über die gesamte Bildschirmbreite */
-  padding: 3rem 2rem;  /* Mehr Abstand für den Container */
-  font-family: 'Poppins', sans-serif;  /* Modernere Schriftart */
+  width: 100%;
+  padding: 3rem 2rem;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;  /* Verhindert, dass padding die Gesamtbreite beeinflusst */
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
-/* Titel */
 .title {
   font-size: 3rem;
   font-weight: 700;
@@ -20,7 +17,6 @@
   text-align: center;
 }
 
-/* Meta-Informationen */
 .meta {
   color: #6c757d;
   margin-bottom: 1.5rem;
@@ -28,7 +24,6 @@
   text-align: center;
 }
 
-/* Tags */
 .tags {
   margin-bottom: 2rem;
   text-align: center;
@@ -47,10 +42,9 @@
 }
 
 .tag:hover {
-  background-color: #b8e1eb;  /* Hellerer Hover-Effekt für Tags */
+  background-color: #b8e1eb;
 }
 
-/* Content */
 .content {
   font-size: 1.1rem;
   color: #333;
@@ -58,10 +52,8 @@
   text-align: justify;
 }
 
-/* Bild */
 .image {
   max-width: 100%;
-  border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   margin: 2.5rem 0;
   display: block;
@@ -69,13 +61,11 @@
   margin-right: auto;
 }
 
-/* Video Wrapper */
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5rem;
 }
@@ -87,10 +77,8 @@
   width: 100%;
   height: 100%;
   border: 0;
-  border-radius: 16px;
 }
 
-/* Zurück-Button */
 .backButton {
   display: inline-block;
   padding: 14px 28px;
