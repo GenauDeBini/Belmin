@@ -7,7 +7,7 @@ import posts from "@/data/post";
 import { useRouter } from "next/navigation";
 
 export default function BlogDetailPage({ params }) {
-  const { id } = use(params); // <- hier params "unwrapped"
+  const { id } = use(params);
   const postId = parseInt(id);
   const post = posts.find((p) => p.id === postId);
   const router = useRouter();
