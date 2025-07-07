@@ -1,0 +1,118 @@
+/* Detail Container */
+.detailContainer {
+  width: 100%; /* Macht den Container über die gesamte Bildschirmbreite */
+  padding: 3rem 2rem;  /* Mehr Abstand für den Container */
+  font-family: 'Poppins', sans-serif;  /* Modernere Schriftart */
+  line-height: 1.8;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;  /* Verhindert, dass padding die Gesamtbreite beeinflusst */
+  margin: 0 auto;
+}
+
+/* Titel */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Meta-Informationen */
+.meta {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Tags */
+.tags {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tag {
+  background-color: #d1ecf1;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
+  display: inline-block;
+  color: #0c5460;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #b8e1eb;  /* Hellerer Hover-Effekt für Tags */
+}
+
+/* Content */
+.content {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+/* Bild */
+.image {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 2.5rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Video Wrapper */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* Zurück-Button */
+.backButton {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: auto;
+}
+
+.backButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.backButton:active {
+  transform: translateY(1px);
+}

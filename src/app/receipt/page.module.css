@@ -1,0 +1,134 @@
+/* Container */
+.container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  color: #333;
+  padding: 3rem 1.5rem;  /* Angepasste Polsterung, damit es nicht zu viel Platz gibt */
+  line-height: 1.7;
+  max-width: 100%;  /* Entfernt die Begrenzung der Breite */
+  margin: 0 auto;
+  min-height: 100vh;
+  box-sizing: border-box;  /* Verhindert, dass padding die Gesamtbreite beeinflusst */
+}
+
+/* Titel */
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* Untertitel */
+.subtitle {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  color: #7f8c8d;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Tabelle */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background-color: #f4f6f9;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1.1rem;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+/* Responsive Tabellen-Ansicht */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  /* Table for Mobile */
+  .table,
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table td {
+    padding: 1.5rem;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+  }
+}
+
+/* Zurück-Button */
+.backButton {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: auto;
+}
+
+.backButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.backButton:active {
+  transform: translateY(1px);
+}

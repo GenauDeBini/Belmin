@@ -1,0 +1,175 @@
+/* Container */
+.container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  color: #333;
+  padding: 4rem 2rem;
+  line-height: 1.7;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Titel */
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+/* Untertitel */
+.subtitle {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #666;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Asymmetrisches Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten Layout */
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eef2f6;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Diagonale Trennung */
+  z-index: 1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.meta {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tags span {
+  display: inline-block;
+  background: #eef2f6;
+  color: #3498db;
+  padding: 0.4rem 1rem;
+  margin: 0.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.filterButton {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #3498db;
+  background: white;
+  color: #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.filterButton:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.active {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Zurück-Button */
+.backButton {
+  display: block;
+  padding: 14px 28px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 2rem auto;
+  text-align: center;
+  width: auto;
+}
+
+.backButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.backButton:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr; /* Eine Spalte auf kleinen Bildschirmen */
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .filterButton {
+    font-size: 1rem;
+  }
+}

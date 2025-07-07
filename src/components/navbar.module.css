@@ -1,0 +1,94 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #ff4d4d, #ff0000); /* Farbverlauf für die Navbar */
+  color: white;
+  padding: 20px 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sanfter Schatten */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-radius: 0 0 12px 12px; /* Abgerundete Ecken für die untere Seite der Navbar */
+  transition: background 0.3s ease;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+/* Menü */
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu li {
+  display: inline;
+}
+
+/* Menü-Links */
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: #ff3b3b;
+  transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #c50000; /* Dunkleres Rot beim Hover */
+  transform: scale(1.1);
+  padding: 12px 24px;
+}
+
+.menu a:focus {
+  outline: none;
+  border: 2px solid #c50000;
+  background-color: #c50000;
+}
+
+.menu a.active {
+  background-color: #ff6347;
+  color: #fff;
+  border-color: #ff6347;
+}
+
+/* Navbar Scroll-Effekt */
+.navbar.scroll {
+  background: linear-gradient(135deg, #ff6347, #d40000); /* Farbverlauf beim Scrollen */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1rem;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+}
